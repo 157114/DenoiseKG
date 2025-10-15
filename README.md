@@ -57,3 +57,6 @@ The results and outputs are stored in the `Result` directory, organized by datas
 - `graph_storage_nx_data.graphml`: Merged graph file.
 
 Ensure all dependencies are installed and configured as per the script requirements before running the script.
+
+#### Acknowledgement
+This project is forked from DIGIMON https://github.com/JayLZhou/GraphRAG.
