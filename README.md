@@ -16,18 +16,6 @@ pip install json_repair pykeen
 
 The `scripts/run_all.sh` script is designed to automate the process of initializing and processing a knowledge graph (KG) using various methods and configurations. Below are the details on how to run the script and customize its parameters.
 
-#### Default Parameters
-- `dataset`: The dataset to use (default: `mini`).
-- `method`: The method configuration file (default: `LightRAG`).
-- `node_reduction`: The target reduction percentage for nodes (default: `0.40`).
-- `edge_threshold`: The threshold for edge reasoning (default: `0.20`).
-- `llm_base_url`: Base URL for the language model (default: `http://28.7.192.183:8081/v1/`).
-- `embedding_base_url`: Base URL for embeddings (default: `http://28.7.195.165:8081/v1`).
-- `cluster_type`: Type of clustering to use (default: `kmeans`).
-- `embedding_type`: Type of embedding to use (default: `llm`).
-- `similarity_mode`: Mode of similarity calculation (default: `node_only`).
-- `merge_type`: Type of merging to perform (default: `reduction_only`).
-
 #### Steps in the Script
 1. **Initialize the KG**: Checks if the KG is already initialized and skips if so.
 2. **Cluster Nodes**: Clusters nodes using the specified clustering method.
@@ -38,6 +26,17 @@ The `scripts/run_all.sh` script is designed to automate the process of initializ
 7. **Winrate Calculation**: Compares results to calculate winrate.
 
 #### Example Command
+Set your API keys
+Before running the script, configure your API keys and urls for llm and embedding models in ./Option/Config2.yaml
+```yaml
+llm:
+    llm_base_url: 'YOUR_LLM_BASE_URL'
+    api_key: "YOUR_API_KEY"
+embedding:
+    embedding_base_url: 'YOUR_EMBEDDING_BASE_URL'
+    api_key: "YOUR_API_KEY"
+```
+
 To run the script with default parameters:
 ```bash
 bash scripts/run_all.sh
