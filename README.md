@@ -58,5 +58,5 @@ The results and outputs are stored in the `Result` directory, organized by datas
 
 Ensure all dependencies are installed and configured as per the script requirements before running the script.
 
-#### Acknowledgement
+### Acknowledgement
 This project is forked from DIGIMON https://github.com/JayLZhou/GraphRAG.
