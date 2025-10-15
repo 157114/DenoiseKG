@@ -1,0 +1,25 @@
+llm:
+  api_type: "openai" # or openai
+  llm_base_url: 'YOUR_LLM_BASE_URL'
+  model: "YOUR_MODEL"
+  api_key: "YOUR_API_KEY"
+  max_concurrent: 128
+
+embedding:
+  api_type: "openai"  # or  ollama / openai.
+  embedding_base_url: 'YOUR_EMBEDDING_BASE_URL'  # or forward url / other llm url
+  api_key: "YOUR_API_KEY"
+  model: "YOUR_MODEL"
+  cache_dir: ""
+  dimensions: 1024
+  max_token_size: 8102
+  embed_batch_size: 10
+  embedding_func_max_async: 10
+ 
+data_root:  "Data" # Root directory for data
+
+
+
+working_dir: ./Result # Result directory for the experiment
+exp_name: default_experiment # Experiment name
+
