@@ -30,9 +30,11 @@ Before running the script, configure your API keys and urls for llm and embeddin
 ```yaml
 llm:
     llm_base_url: 'YOUR_LLM_BASE_URL'
+    model: "YOUR_LLM_MODEL"
     api_key: "YOUR_API_KEY"
 embedding:
     embedding_base_url: 'YOUR_EMBEDDING_BASE_URL'
+    model: "YOUR_EMBEDDING_MODEL"
     api_key: "YOUR_API_KEY"
 ```
 
