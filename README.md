@@ -26,7 +26,6 @@ The `scripts/run_all.sh` script is designed to automate the process of initializ
 7. **Winrate Calculation**: Compares results to calculate winrate.
 
 #### Example Command
-Set your API keys
 Before running the script, configure your API keys and urls for llm and embedding models in ./Option/Config2.yaml
 ```yaml
 llm:
